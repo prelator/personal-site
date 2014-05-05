@@ -1,0 +1,236 @@
+extends ../layout.jade
+
+block content
+  section.featured
+        .container
+          .row.mar-bot40
+            .col-md-6.col-md-offset-3
+              .align-center
+                img(src="img/profile.jpg", alt="Patrick McKay", width=200).img-circle
+                h2.slogan Welcome to McKay Development
+                p
+                  | This is the personal website and portfolio of Patrick McKay, a professional full-stack
+                  | web developer in Denver, Colorado. Patrick graduated from the
+                  | 10-week <a href="http://refactoru.com" class="white">RefactorU</a> dev bootcamp in Boulder in March of 2014, 
+                  | and he is now pursuing his dream of a career building useful and modern websites for Colorado businesses.
+                a(href="files/Mckay-Resume.pdf")
+                  button(type="button").btn.btn-primary View resume  
+      // services
+  section#section-skills.section.pad-bot30.bg-white
+    .container
+      .row.mar-bot10
+        .col-md-offset-3.col-md-6
+          .section-header
+            h2.section-heading.animated(data-animation='bounceInUp') Skills
+      .row.mar-bot40
+        .col-lg-4
+          .align-center
+            i.fa.fa-html5.fa-5x.mar-bot20
+            h4.text-bold HTML5 / CSS3
+            ul.align-left.move-right
+              li.mar-bot5 Front-end markup with modern HTML elements and the latest CSS styling.
+              li.mar-bot5 Comfortable hand-coding CSS or using popular CSS frameworks such as Twitter Bootstrap, Foundation, and SemanticUI.
+              li.mar-bot5 CSS pre-processors inlcuding LESS, SASS, Compass, and Stylus.
+        .col-lg-4
+          .align-center
+            i.fa.fa-code.fa-5x.mar-bot20
+            h4.text-bold Javascript
+            ul.align-left.move-right
+              li.mar-bot5 Strong knowledge of Object Oriented (OO) Javascript programming, MVC, and RESTful archetecture.
+              li.mar-bot5 Skilled in using jQuery and AJAX to build highly interactive front-end designs.
+              li.mar-bot5 Knowledgable in modern front-end Javascript libararies and frameworks including AngularJS, KnockoutJS, and Handlebars.  
+        .col-lg-4
+          .align-center
+            i.fa.fa-desktop.fa-5x.mar-bot20
+            h4.text-bold Back-end Development
+            ul.align-left.move-right
+              li.mar-bot5 Back-end development using NodeJS, ExpressJS, MongoDB/Mongoose, and JADE. 
+              li.mar-bot5 MEAN (Mongo, Express, Angular, Node) stack.
+              li.mar-bot5 Passport authentication and oAuth 2.0.
+              li.mar-bot5 Jasmine unit-testing.
+              li.mar-bot5 Also proficient in basic PHP and MySQL.
+  section#testimonials.section(data-stellar-background-ratio='0.5')
+    .container
+      .row
+        .col-lg-12
+          .align-center
+            .testimonial.pad-top40.pad-bot40.clearfix.dim-background
+              h5
+                | "[Patrick has] exercised competence in all areas presented and embraced the culture of learning in development. 
+                | [He] combine[s] technical skills with personal interests with a rare spontaneity and ease." 
+              br
+              span.author
+                | — RAINE LOURIE 
+              br
+              span.author 
+                | RefactorU Instructor
+  
+  // about
+  section#section-about.section.appear.clearfix
+    .container
+      .row.mar-bot20
+        .col-md-offset-3.col-md-6
+          .section-header
+            h2.section-heading.animated(data-animation='bounceInUp') About Patrick
+            p
+              | Passionate junior-level developer specializing in Javascript and modern web frameworks.
+            a(href="files/Mckay-Resume.pdf")
+                  button(type="button").btn.btn-primary View full resume  
+      
+      .row.align-center.mar-bot40
+        .col-md-6
+          p.align-left
+            | I have always had a passion for technology and the Internet, and my first carreer plan was to become an internet lawyer who could represent tech companies and help foster a legal environment which enabled others to innovate online. 
+          p.align-left
+            | After graduating from law school in 2012, I worked for nearly a year as an attorney practicing civil litigation and criminal defense at a small Denver law firm. 
+          p.align-left
+            | While I enjoyed working as a lawyer, I ultimately decided it was not a viable long-term career. I decided instead to pursue my interest in technology from the creative side rather than the legal side, and actually become a developer myself. I left my law job in November of 2013, and have been purusing a career in web development ever since.
+
+        .col-md-6
+          p.align-left
+            | To jump-start my new career, I attended the ten-week RefactorU dev bootcamp program in Boulder from January to March of 2014. The course consisted of 40+ hours per week of in-class instruction and programming exercises, employing many of the hottest upcoming web technologies. 
+          p.align-left    
+            | During the course, I designed and built several complete applications with both client-side and server-side components, and had the opportunity to explore a number of Javascript libraries, frameworks, tools, and build systems. 
+          p.align-left
+            | Though it was not part of the formal curriculum, I began to learn AngularJS for my final project and I have been learning more about that exciting framework (as well as gaining a working knowledge of PHP and MySQL) since completing the RefactorU course. 
+  // /about
+  // spacer section:stats
+  section#parallax1.section.pad-top40.pad-bot40(data-stellar-background-ratio='0.5')
+    .container
+      .row
+        .col-lg-12
+          .align-center
+            .testimonial.pad-top40.pad-bot40.clearfix.dim-background
+              h5
+                | As part of the RefactorU course, Patrick developed a number of functional web apps demonstrating a wide variety of front-end and back-end development skills.     
+  // section works
+  section#section-works.section.appear.clearfix
+    .container
+      .row.mar-bot40
+        .col-md-offset-3.col-md-6
+          .section-header
+            h2.section-heading.animated(data-animation='bounceInUp') Portfolio
+            p
+              | See below for examples of web apps I have developed. Click the buttons to filter by the category of project.
+      .row
+        nav#filter.col-md-12.text-center
+          ul
+            li
+              a.current.btn-theme.btn-small(href='#', data-filter='*') All
+            li
+              a.btn-theme.btn-small(href='#', data-filter='.frontend') Front-end
+            li
+              a.btn-theme.btn-small(href='#', data-filter='.node') Node.js apps
+            //- li
+            //-   a.btn-theme.btn-small(href='#', data-filter='.php') PHP
+            li
+              a.btn-theme.btn-small(href='#', data-filter='.other') Other
+        .col-md-12
+          .row
+            #3.portfolio-items.isotopeWrapper.clearfix
+              // Begin portfio list
+              
+              each item in portfolioItems
+                article.col-md-4.isotopeItem(class=""+item.filter+"")
+                  .portfolio-item
+                    img(src="img/portfolio/"+item.image+"")
+                    .portfolio-desc.align-center
+                      .folio-info
+                        h5
+                          a(href="/projects/"+item.url+"") #{item.title}
+                          p #{item.category}
+                        a.fancybox(href="img/portfolio/"+item.image+"")
+                          i(data-toggle='tooltip', title='View screenshot').fa.fa-search-plus.fa-2x.show-tooltip.mar-bot10
+                        p #{item.shortDescr}
+                        .row
+                          .col-sm-4.align-center
+                            if (item.github != "")
+                              a(href=""+item.github+"")
+                                i(data-toggle='tooltip', title='View code on Github').fa.fa-code.fa-2x.show-tooltip
+                          .col-sm-4.align-center
+                            a(href="/projects/"+item.url+"")
+                              i(data-toggle='tooltip', title='View project details').fa.fa-list-alt.fa-2x.show-tooltip                    
+                          .col-sm-4.align-center
+                            if (item.demo != "")
+                              a(href=""+item.demo+"")
+                                i(data-toggle='tooltip', title='View live demo').fa.fa-play-circle.fa-2x.show-tooltip
+      
+                 //End portfolio list
+
+  section#parallax2.section.parallax(data-stellar-background-ratio='0.5')
+    .container
+      .row
+        .col-lg-12
+          .align-center
+            .testimonial.pad-top40.pad-bot40.clearfix.dim-background
+              h5
+                | In addition to programming, Patrick enjoys hiking, skiing, HDR landscape photography, video editing, and flying video-piloted remote control airplanes.   
+ 
+  // contact
+  section#section-contact.section.appear.clearfix
+    .container
+      .row.mar-bot40
+        .col-md-offset-3.col-md-6
+          .section-header
+            h2.section-heading.animated(data-animation='bounceInUp') Contact me
+            p
+              | If you are interested in hiring me either for a full-time job or a freelance / contract gig, please submit the contact form below.
+            p
+              | You can also contact me by phone at (303)-809-3613 or email at <a href='mailto:patrick@fairusetube.org'>patrick@fairusetube.org</a>.
+      .row
+        .col-md-8.col-md-offset-2
+          #contact-form.cform
+            #sendmessage.contact-status.alert.alert-success
+              | Your message has been sent. Thank you!
+            #messagefail.contact-status.alert.alert-danger
+              | Something went wrong. Please try again.
+            form#contactForm.contactForm(action='/contact/submit-form', method='post', role='form')
+              .form-group
+                label(for='name') Your Name
+                input#name.form-control(type='text', name='name', placeholder='Your Name', data-rule='maxlen:4', data-msg='Please enter at least 4 chars')
+                .validation
+              .form-group
+                label(for='email') Your Email
+                input#email.form-control(type='email', name='email', placeholder='Your Email', data-rule='email', data-msg='Please enter a valid email')
+                .validation
+              .form-group
+                label(for='subject') Subject
+                input#subject.form-control(type='text', name='subject', placeholder='Subject', data-rule='maxlen:4', data-msg='Please enter at least 8 chars of subject')
+                .validation
+              .form-group
+                label(for='message') Message
+                textarea.form-control(name='message', rows='5', data-rule='required', data-msg='Please write something for me')
+                .validation
+              button.btn.btn-theme.pull-left(type='submit') SEND MESSAGE
+        // ./span12
+  section#footer.section.footer
+    .container
+      .row.animated.opacity.mar-bot20(data-andown='fadeIn', data-animation='animation')
+        .col-sm-12.align-center
+          ul.social-network.social-circle
+            li
+              a.icoFacebook(href='http://www.facebook.com/pamckay', title='Facebook')
+                i.fa.fa-facebook
+            li
+              a.icoTwitter(href='http://twitter.com/pa_mckay', title='Twitter')
+                i.fa.fa-twitter
+            li
+              a.icoGoogle(href='https://github.com/prelator', title='Github')
+                i.fa.fa-github
+            li
+              a.icoLinkedin(href='https://www.linkedin.com/in/patrickmckay419', title='Linkedin')
+                i.fa.fa-linkedin
+            li
+              a.icoVimeo(href='https://vimeo.com/serithian', title="Vimeo")
+                i.fa.fa-vimeo-square
+            li
+              a.icoGoogle(href='https://www.youtube.com/user/DarkLordofDebate', title='YouTube')
+                i.fa.fa-youtube
+      .row.align-center.copyright
+        .col-sm-12
+          p
+            | Site copyright © 2014 by Patrick McKay
+            br
+            a(href="/about-site") About this site
+            a.scrollup(href='#header')
+              i.fa.fa-chevron-up
