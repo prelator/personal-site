@@ -1,0 +1,31 @@
+extends ../layout.jade
+
+block content
+  section.featured.full-page
+    .container.well.normal-text
+      .row.mar-bot20
+        .col-sm-12
+          .align-center
+            h1.mar-bot10 #{title}
+            h4 #{category}
+
+      .row.align-center
+        .col-sm-4
+          a.fancybox(href="/img/portfolio/gold-of-skyrim.jpg")
+            img(src="/img/portfolio/gold-of-skyrim.jpg").project-image.mar-bot20
+          a(href="#")
+            i(data-toggle='tooltip', title='View code on Github').fa.fa-code.fa-2x.show-tooltip.mar-right20
+          
+          a(href="/demos/gold-of-skyrim/index.html")
+            i(data-toggle='tooltip', title='View live demo').fa.fa-play-circle.fa-2x.show-tooltip.mar-left20
+        
+        .col-sm-8.align-left 
+          p This app was created for a Javascript exercise at RefactorU, focused on using jQuery to append and remove markers from map. My app used a map of the kingdom of Skyrim from the Elder Scrolls: V video game. 
+          p The app allows the user to add markers by clicking on the map and enter comments which appear when they mouse-over the marker. Double clicking removes the marker.  
+
+          h4.mar-bot0 Technology demonstrated
+          ul
+            li HTML5 elements and CSS3 styling (all manual - no CSS frameworks used)
+            li Client-side Javascript programming
+            li jQuery DOM manipulation     
+  

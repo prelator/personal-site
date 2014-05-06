@@ -1,0 +1,30 @@
+extends ../layout.jade
+
+block content
+  section.featured.full-page
+    .container.well.normal-text
+      .row.mar-bot20
+        .col-sm-12
+          .align-center
+            h1.mar-bot10 #{title}
+            h4 #{category}
+
+      .row.align-center
+        .col-sm-4
+          a.fancybox(href="/img/portfolio/handlebars-store.jpg")
+            img(src="/img/portfolio/handlebars-store.jpg").project-image.mar-bot20
+          a(href="#")
+            i(data-toggle='tooltip', title='View code on Github').fa.fa-code.fa-2x.show-tooltip.mar-right20
+          
+          a(href="/demos/handlebars-store/index.html")
+            i(data-toggle='tooltip', title='View live demo').fa.fa-play-circle.fa-2x.show-tooltip.mar-left20
+        
+        .col-sm-8.align-left 
+          p RefactorU exercise making a Handlebars-based storefont where the user can view a product list and add items to a wishlist.
+          
+          h4.mar-bot0 Technology demonstrated
+          ul
+            li HTML5 elements and CSS3 styling
+            li Handlebars client-side templating and MVC (model-view-controller) architecture
+            li Client-side, object-oriented Javascript programming
+            li jQuery DOM manipulation

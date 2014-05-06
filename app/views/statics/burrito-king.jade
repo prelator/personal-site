@@ -1,0 +1,30 @@
+extends ../layout.jade
+
+block content
+  section.featured.full-page
+    .container.well.normal-text
+      .row.mar-bot20
+        .col-sm-12
+          .align-center
+            h1.mar-bot10 #{title}
+            h4 #{category}
+
+      .row.align-center
+        .col-sm-4
+          a.fancybox(href="/img/portfolio/burrito-king.jpg")
+            img(src="/img/portfolio/burrito-king.jpg").project-image.mar-bot20
+          a(href="#")
+            i(data-toggle='tooltip', title='View code on Github').fa.fa-code.fa-2x.show-tooltip.mar-right20
+          
+          a(href="/demos/burrito-king/index.html")
+            i(data-toggle='tooltip', title='View live demo').fa.fa-play-circle.fa-2x.show-tooltip.mar-left20
+        
+        .col-sm-8.align-left 
+          p A Javascript / jQuery based exercise creating an interactive menu for ordering from a restaurant. Food items, plates, menus, and orders are all nested classes using prototypal inheritance and constructors. Users can filter plates by several criteria and add them to an order, where the total price of the order is automatically calculated.
+          
+          h4.mar-bot0 Technology demonstrated
+          ul
+            li HTML5 elements and CSS3 styling
+            li Client-side, object-oriented Javascript programming
+            li Javascript object constructors and prototypal inheritance
+            li jQuery DOM manipulation

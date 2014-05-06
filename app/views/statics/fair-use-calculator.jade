@@ -1,0 +1,34 @@
+extends ../layout.jade
+
+block content
+  section.featured.full-page
+    .container.well.normal-text
+      .row.mar-bot20
+        .col-sm-12
+          .align-center
+            h1.mar-bot10 #{title}
+            h4 #{category}
+
+      .row.align-center
+        .col-sm-4
+          a.fancybox(href="/img/portfolio/fair-use.jpg")
+            img(src="/img/portfolio/fair-use.jpg").project-image.mar-bot20
+          a(href="#")
+            i(data-toggle='tooltip', title='View code on Github').fa.fa-code.fa-2x.show-tooltip.mar-right20
+          
+          a(href="/demos/fair-use-calculator/index.html")
+            i(data-toggle='tooltip', title='View live demo').fa.fa-play-circle.fa-2x.show-tooltip.mar-left20
+        
+        .col-sm-8.align-left 
+          p This was my midterm project at RefactorU. It is a complete, client-side only app which I eventually intend to integrate with my website, <a href="http://fairusetube.org">FairUseTube.org</a>, which has a series of guides and tutorials for disputing false copyright claims on YouTube. 
+          p This app is a jQuery and Handlebars based survey app, which asks the user a series of multiple-choice questions about their YouTube video in order to determine the likelihood that their use of copyrighted material qualifies as "fair use" under copyright law. Each response has an assigned point value, which is added into a final score.
+          p If the user's final score is over 50%, it is determined that their video likely qualifies as fair use. The app then gives the user the option to automatically generate text to use in disputing the copyright claim against their video, based on their earlier answers.
+          
+          h4.mar-bot0 Technology demonstrated
+          ul
+            li HTML5 elements and CSS3 styling
+            li Twitter Bootstrap
+            li Client-side Javascript
+            li jQuery DOM manipulation and animations
+            li Handlebars client-side templating and MVC (model-view-controller) architecture
+            li Object oriented Javascript programming

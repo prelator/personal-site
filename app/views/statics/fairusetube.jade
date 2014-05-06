@@ -1,0 +1,30 @@
+extends ../layout.jade
+
+block content
+  section.featured.full-page
+    .container.well.normal-text
+      .row.mar-bot20
+        .col-sm-12
+          .align-center
+            h1.mar-bot10 #{title}
+            h4 #{category}
+
+      .row.align-center
+        .col-sm-4
+          a.fancybox(href="/img/portfolio/fairusetube.jpg")
+            img(src="/img/portfolio/fairusetube.jpg").project-image.mar-bot20
+          
+          a(href="http://fairusetube.org")
+            i(data-toggle='tooltip', title='View live site').fa.fa-play-circle.fa-2x.show-tooltip.mar-left20
+        
+        .col-sm-8.align-left 
+          p This is a <a href="http://fairusetube.org">website</a> I originally built while I was still in law school, before I learned actual programming and formal web development. It is a blog/tutorial website providing information about copyright law and YouTube videos, and includes a number of guides for disputing false copyright claims on YouTube.
+
+          p The site is based on the Joomla v1.5 content management system, and incorporates a number of custom plugins to add additional functionality. I plan to eventually re-do the site either in Node or Wordpress.
+
+          p Though not directly related to web development, my blogging and YouTube-related copyright activism through the site caused me to be interviewed in a number of news articles on technology news sites over the last few years.
+          
+          h4.mar-bot0 Technology / skills demonstrated
+          ul
+            li Installing, configuring, maintaining, and expanding a Joomla-based website
+            li Server and MySQL database administration

@@ -3,14 +3,14 @@ module.exports = {
   list: [
     
     {
-      title: "LocalDrones",
+      title: "Local Drones",
       category: "NodeJS",
       filter: "node",
       image: "localdrones.jpg",
       url: "localdrones",
       github: "",
       demo: "http://localdrones.net",
-      shortDescr: "My final project at RefactorU. App for drone pilots to bid on aerial photography projects. Built using Node, Express, MongoDB, and Angular."
+      shortDescr: "App for drone pilots to bid on aerial photography projects. Built using Node, Express, MongoDB, and Angular."
     },{
       title: "Fair Use Calculator",
       category: "Front-end",
@@ -19,7 +19,7 @@ module.exports = {
       url: "fair-use-calculator",      
       github: "",
       demo: "/demos/fair-use-calculator/index.html",
-      shortDescr: "My midterm project at RefactorU. A Handlebars-based front-end app to calculate if a YouTube video qualifies as \"fair use\" under copyright law.",
+      shortDescr: "A Handlebars-based front-end app to calculate if a YouTube video qualifies as \"fair use\" under copyright law.",
     },{
       title: "Fairusetube.org",
       category: "Joomla",
@@ -28,7 +28,7 @@ module.exports = {
       url: "fairusetube",
       github: "",
       demo: "http://fairusetube.org",
-      shortDescr: "A Joomla-based website I built while in law school which provides tutorials for YouTubers to dispute false copyright claims against their videos."
+      shortDescr: "A Joomla-based website which provides tutorials for YouTubers to dispute false copyright claims against their videos."
     },{
       title: "Quotify",
       category: "Front-end",
@@ -37,7 +37,7 @@ module.exports = {
       url: "quotify",
       github: "",
       demo: "/demos/quotify/index.html",
-      shortDescr: "A front-end Javascript/jQuery app which lets the user post, sort, view, and rate pithy quotes."
+      shortDescr: "A client-side Javascript/jQuery app which lets the user post, sort, view, and rate pithy quotes."
     },{
       title: "Gold of Skyrim",
       category: "Front-end",
@@ -46,7 +46,7 @@ module.exports = {
       url: "gold-of-skyrim",
       github: "",
       demo: "/demos/gold-of-skyrim/index.html",
-      shortDescr: "A front-end Javascript/jQuery app which allows the user to place markers on a map of Skyrim and create pop-over comments describing where gold can be found in the game."
+      shortDescr: "A client-side Javascript/jQuery app which allows the user to place markers on a map of Skyrim and create pop-over comments."
     },{
       title: "Mad Metrics",
       category: "Front-end",
@@ -57,6 +57,15 @@ module.exports = {
       demo: "/demos/mad-metrics/index.html",
       shortDescr: "Javascript exercise from RefactorU, using native Javascript to collect metrics on a user's interaction with a web page."
     },{
+      title: "AMV Contest",
+      category: "NodeJS",
+      filter: "node",
+      image: "amv-contest.jpg",
+      url: "amv-contest",
+      github: "",
+      demo: "",
+      shortDescr: "Node app that allows users to post links to anime music videos on YouTube and then pick a winner between two randomly paired videos."
+    },{
       title: "Handlebars Store",
       category: "Front-end",
       filter: "frontend",
@@ -66,15 +75,6 @@ module.exports = {
       demo: "/demos/handlebars-store/index.html",
       shortDescr: "RefactorU exercise making a Handlebars-based storefont where the user can view a product list and add items to a wishlist."
     },{
-      title: "AMV Contest",
-      category: "NodeJS",
-      filter: "node",
-      image: "amv-contest.jpg",
-      url: "amv-contest",
-      github: "",
-      demo: "",
-      shortDescr: "Node app made as an exercise for RefactorU. Allows users to post links to anime music videos on YouTube and then pick a winner between two randomly paired videos."
-    },{
       title: "Burrito King",
       category: "Front-end",
       filter: "frontend",
@@ -82,7 +82,7 @@ module.exports = {
       url: "burrito-king",
       github: "",
       demo: "/demos/burrito-king/index.html",
-      shortDescr: "A Javascript, jQuery, and Handlebars based exercise creating an interactive menu for ordering from a restaurant, allowing the user to filter menu items by different criteria and automatically total up their order."
+      shortDescr: "A Javascript, jQuery, and Handlebars based exercise creating an interactive menu for ordering from a restaurant."
     },{
       title: "Clock",
       category: "Front-end",

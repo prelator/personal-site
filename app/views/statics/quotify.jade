@@ -1,0 +1,30 @@
+extends ../layout.jade
+
+block content
+  section.featured.full-page
+    .container.well.normal-text
+      .row.mar-bot20
+        .col-sm-12
+          .align-center
+            h1.mar-bot10 #{title}
+            h4 #{category}
+
+      .row.align-center
+        .col-sm-4
+          a.fancybox(href="/img/portfolio/quotify.jpg")
+            img(src="/img/portfolio/quotify.jpg").project-image.mar-bot20
+          a(href="#")
+            i(data-toggle='tooltip', title='View code on Github').fa.fa-code.fa-2x.show-tooltip.mar-right20
+          
+          a(href="/demos/quotify/index.html")
+            i(data-toggle='tooltip', title='View live demo').fa.fa-play-circle.fa-2x.show-tooltip.mar-left20
+        
+        .col-sm-8.align-left 
+          p This app was the product of a pair-programming exercise at RefactorU. Another student and I built a client-side Javascript / jQuery app which allows the user to post, delete, sort, rate, and view pithy quotes in several different ways. The quotes are stored as client-side Javascript objects, so there is no persistent data. 
+
+          h4.mar-bot0 Technology demonstrated
+          ul
+            li HTML5 elements and CSS3 styling (all manual - no CSS frameworks used)
+            li Client-side, object oriented Javascript programming
+            li jQuery DOM manipulation     
+  

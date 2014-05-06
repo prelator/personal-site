@@ -13,7 +13,7 @@ module.exports = function(app){
   app.get('/blog', blog.main);
 
 
-  //===============Static page routes========================
+//=============== Static page routes ========================
 
   var statics = require('../app/controllers/statics');
 
@@ -21,17 +21,30 @@ module.exports = function(app){
   app.get('/about-site', statics.aboutSite);
 
 
-  //=============Portfolion project pages========================
+  //==== Portfolio project pages =====
+  app.get('/projects', function(req, res) {
+    res.redirect('/#section-works');
+  });
+
   app.get('/projects/localdrones', statics.localdrones);
+  
+  app.get('/projects/fair-use-calculator', statics.fairusecalculator);
 
+  app.get('/projects/fairusetube', statics.fairusetube);
 
+  app.get('/projects/quotify', statics.quotify);
 
+  app.get('/projects/gold-of-skyrim', statics.skyrim);
 
+  app.get('/projects/mad-metrics', statics.madmetrics);
 
+  app.get('/projects/amv-contest', statics.amvcontest);
 
+  app.get('/projects/handlebars-store', statics.handlebarsstore);
 
+  app.get('/projects/burrito-king', statics.burritoking);
 
-
+  app.get('/projects/clock', statics.clock);
 
 
 
