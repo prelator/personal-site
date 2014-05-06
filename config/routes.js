@@ -21,6 +21,8 @@ module.exports = function(app){
   app.get('/about-site', statics.aboutSite);
 
 
+  //=============Portfolion project pages========================
+  app.get('/projects/localdrones', statics.localdrones);
 
 
 
