@@ -8,7 +8,7 @@ module.exports = {
       filter: "node",
       image: "localdrones.jpg",
       url: "localdrones",
-      github: "",
+      github: "https://github.com/prelator/refactoru-final-localdrones",
       demo: "http://localdrones.net",
       shortDescr: "App for drone pilots to bid on aerial photography projects. Built using Node, Express, MongoDB, and Angular."
     },{
@@ -17,7 +17,7 @@ module.exports = {
       filter: "frontend",        
       image: "fair-use.jpg",      
       url: "fair-use-calculator",      
-      github: "",
+      github: "https://github.com/prelator/refactoru-midterm-fair-use-calculator",
       demo: "/demos/fair-use-calculator/index.html",
       shortDescr: "A Handlebars-based front-end app to calculate if a YouTube video qualifies as \"fair use\" under copyright law.",
     },{
@@ -35,7 +35,7 @@ module.exports = {
       filter: "frontend",
       image: "quotify.jpg",
       url: "quotify",
-      github: "",
+      github: "https://github.com/prelator/refactoru-quotify",
       demo: "/demos/quotify/index.html",
       shortDescr: "A client-side Javascript/jQuery app which lets the user post, sort, view, and rate pithy quotes."
     },{
@@ -44,7 +44,7 @@ module.exports = {
       filter: "frontend",
       image: "gold-of-skyrim.jpg",
       url: "gold-of-skyrim",
-      github: "",
+      github: "https://github.com/prelator/refactoru-gold-of-skyrim",
       demo: "/demos/gold-of-skyrim/index.html",
       shortDescr: "A client-side Javascript/jQuery app which allows the user to place markers on a map of Skyrim and create pop-over comments."
     },{
@@ -53,7 +53,7 @@ module.exports = {
       filter: "frontend",
       image: "mad-metrics.jpg",
       url: "mad-metrics",
-      github: "",
+      github: "https://github.com/prelator/refactoru-mad-metrics",
       demo: "/demos/mad-metrics/index.html",
       shortDescr: "Javascript exercise from RefactorU, using native Javascript to collect metrics on a user's interaction with a web page."
     },{
@@ -71,7 +71,7 @@ module.exports = {
       filter: "frontend",
       image: "handlebars-store.jpg",
       url: "handlebars-store",
-      github: "",
+      github: "https://github.com/prelator/refactoru-handlebars-store",
       demo: "/demos/handlebars-store/index.html",
       shortDescr: "RefactorU exercise making a Handlebars-based storefont where the user can view a product list and add items to a wishlist."
     },{
@@ -80,7 +80,7 @@ module.exports = {
       filter: "frontend",
       image: "burrito-king.jpg",
       url: "burrito-king",
-      github: "",
+      github: "https://github.com/prelator/refactoru-burrito-king",
       demo: "/demos/burrito-king/index.html",
       shortDescr: "A Javascript, jQuery, and Handlebars based exercise creating an interactive menu for ordering from a restaurant."
     },{
@@ -89,7 +89,7 @@ module.exports = {
       filter: "frontend",
       image: "clock.jpg",
       url: "clock",
-      github: "",
+      github: "https://github.com/prelator/refactoru-clock-exercise",
       demo: "/demos/clock/index.html",
       shortDescr: "Javascript and CSS exercise from RefactorU, creating an animated digital clock with all elements appended by jQuery."
     }
