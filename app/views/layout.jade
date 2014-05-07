@@ -42,7 +42,41 @@ html(lang='en')
                 a(href="/about-site") Site Info
           // /.navbar-collapse
     block content
-     
+    
+    //- Site content goes here
+    
+    block footer
+      section#footer.section.footer
+        .container
+          .row.animated.opacity.mar-bot20(data-andown='fadeIn', data-animation='animation')
+            .col-sm-12.align-center
+              ul.social-network.social-circle
+                li
+                  a.icoFacebook(href='http://www.facebook.com/pamckay', title='Facebook')
+                    i.fa.fa-facebook
+                li
+                  a.icoTwitter(href='http://twitter.com/pa_mckay', title='Twitter')
+                    i.fa.fa-twitter
+                li
+                  a.icoGoogle(href='https://github.com/prelator', title='Github')
+                    i.fa.fa-github
+                li
+                  a.icoLinkedin(href='https://www.linkedin.com/in/patrickmckay419', title='Linkedin')
+                    i.fa.fa-linkedin
+                li
+                  a.icoVimeo(href='https://vimeo.com/serithian', title="Vimeo")
+                    i.fa.fa-vimeo-square
+                li
+                  a.icoGoogle(href='https://www.youtube.com/user/DarkLordofDebate', title='YouTube')
+                    i.fa.fa-youtube
+          .row.align-center.copyright
+            .col-sm-12
+              p
+                | Site copyright © 2014 by Patrick McKay
+                br
+                a(href="/about-site") About this site
+                a.scrollup(href='#header')
+                  i.fa.fa-chevron-up
     block scripts
       script(src='/js/modernizr-2.6.2-respond-1.1.0.min.js')
       script(src='/js/jquery-1.11.1.min.js')
